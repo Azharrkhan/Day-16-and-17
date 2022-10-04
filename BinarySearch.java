@@ -32,6 +32,4 @@ public class BinarySearch {
 			System.out.println("Word is found at index: " +result);
 		}
 	}
-//	public void binarySearch(int a[], int first, int last, int key) {
-//	}
 }
