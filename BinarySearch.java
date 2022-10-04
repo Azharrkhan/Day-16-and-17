@@ -6,30 +6,30 @@ import java.util.Scanner;
 public class BinarySearch {
 
 	public static void main(String[] args) {
-		int[] a = {10, 30, 40, 20, 50, 70, 60}; 
+		String[] a = {"Mango", "Grapes", "Papaya", "Orange", "Apple", "PineApple"}; 
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the key taht you want to search");
-		int key = sc.nextInt();
+		System.out.println("Enter the word that you want to search");
+		String word = sc.next();
 		
-		System.out.println("Array before forting: ");
+		System.out.println("Array before sorting: ");
 		for(int i = 0;  i < a.length; i++) {
 		     System.out.print(a[i]+ " ");
 		     }
 		System.out.println();
 		//Sorting the array
 	     Arrays.sort(a);
-	     System.out.println("Array after forting: ");
+	     System.out.println("Array after sorting: ");
 	     for(int i = 0;  i < a.length; i++) {
 	     System.out.print(a[i]+ " ");
 	     }
 	     System.out.println();
 	     
-		int result = Arrays.binarySearch(a,key);
+		int result = Arrays.binarySearch(a,word);
 		if (result < 0)
-			System.out.println("Element is not found");
+			System.out.println("Word is not found");
 		else {
-			System.out.println("Element is found at index: " +result);
+			System.out.println("Word is found at index: " +result);
 		}
 	}
 //	public void binarySearch(int a[], int first, int last, int key) {
